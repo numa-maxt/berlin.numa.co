@@ -18,6 +18,13 @@ special 229, 0, 100
     background-color: #00587D;
     color: #8AC5C6;
 }
+.animation-transition-fast, .navbar {
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
 
 /*Branding*/
 
