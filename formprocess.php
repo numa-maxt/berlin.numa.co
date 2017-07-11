@@ -86,9 +86,11 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
  
 <!-- include your own success html here -->
  
-Thank you for contacting us. We will be in touch with you very soon.
+<p>Thank you for contacting us. We will be in touch with you very soon.</p>
+
+<p><a href="http://berlin.numa.com">Back to berlin.numa.co</a></p>
  
 <?php
- 
+
 }
 ?>

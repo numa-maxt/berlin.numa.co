@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "daniel@digitalime.com";
-    $email_subject = "Website Contact from berlin.numa.co";
+    $email_subject = "Mailing List Signup from berlin.numa.co";
  
     function died($error) {
         // your error code can go here
@@ -16,19 +16,15 @@ if(isset($_POST['email'])) {
  
  
     // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['comments'])) {
+    if(!isset($_POST['email'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
  
      
  
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
+
     $email_from = $_POST['email']; // required
-    $comments = $_POST['comments']; // required
+  
  
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -37,25 +33,8 @@ if(isset($_POST['email'])) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
  
-    $string_exp = "/^[A-Za-z .'-]+$/";
  
-  if(!preg_match($string_exp,$first_name)) {
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  }
- 
-  if(!preg_match($string_exp,$last_name)) {
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
-  }
- 
-  if(strlen($comments) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
-  }
- 
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
- 
-    $email_message = "<h3>Contact from the berlin.numa.co Website.</h3>";
+    $email_message = "<h3>Mailing list signup from berlin.numa.co.</h3>";
  
      
     function clean_string($string) {
@@ -68,10 +47,7 @@ if(isset($_POST['email'])) {
      $email_from = clean_string($email_from);
      $comments = clean_string($comments);
  
-    $email_message .= "<strong>First Name:</strong> ".$first_name."<br>";
-    $email_message .= "<strong>Last Name:</strong> ".$last_name."<br>";
     $email_message .= "<strong>Email:</strong> ".$email_from."<br>";
-    $email_message .= "<strong>Comments:</strong> ".$comments."<br>";
  
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
@@ -86,7 +62,7 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
  
 <!-- include your own success html here -->
  
-<p>Thank you for contacting us. We will be in touch with you very soon.</p>
+<p>Thank you. You are now signed up to the mailing list.</p>
 
 <p><a href="http://berlin.numa.co">Back to berlin.numa.co</a></p>
  
