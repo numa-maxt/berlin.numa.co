@@ -2954,6 +2954,68 @@ h2.title {
   padding-right: 0;
 }
 
+.card-form-horizontal .card-content {
+  padding-left: 15px;
+  padding-right: 15px
+}
+.card-form-horizontal .form-group {
+  padding-bottom: 0;
+  margin: 3px 0 0
+}
+.card-form-horizontal .form-group .form-control {
+  margin-bottom: 0
+}
+.card-form-horizontal .btn {
+  margin: 0
+}
+.card-form-horizontal .input-group .input-group-addon {
+  padding-left: 0
+}
+.card-profile, .card-testimonial {
+  margin-top: 30px;
+  text-align: center
+}
+.card-profile .btn-just-icon.btn-raised, .card-testimonial .btn-just-icon.btn-raised {
+  margin-left: 6px;
+  margin-right: 6px
+}
+.card-profile .card-avatar, .card-testimonial .card-avatar {
+  max-width: 130px;
+  max-height: 130px;
+  margin: -50px auto 0;
+  border-radius: 50%;
+  overflow: hidden
+}
+.card-profile .card-avatar+.card-content, .card-testimonial .card-avatar+.card-content {
+  margin-top: 15px
+}
+.card-profile.card-plain .card-avatar, .card-testimonial .footer, .card-testimonial.card-plain .card-avatar {
+  margin-top: 0
+}
+.card-testimonial .card-avatar {
+  max-width: 100px;
+  max-height: 100px
+}
+.card-testimonial .footer .card-avatar {
+  margin-top: 10px;
+  margin-bottom: -50px
+}
+.card-blog, .card-testimonial .card-description+.card-title, .card-testimonial .icon {
+  margin-top: 30px
+}
+.card-testimonial .icon .material-icons {
+  font-size: 40px
+}
+.card-blog .row .category {
+  margin-bottom: 0
+}
+.card-blog .card-title {
+  margin-top: 5px
+}
+.card-blog .card-image+.category {
+  margin-top: 20px
+}
+
 .modal-content {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
   border-radius: 3px;
