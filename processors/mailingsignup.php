@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "daniel@digitalime.com";
+    $email_to = "berlin+newsletter@numa.co";
     $email_subject = "Mailing List Signup from berlin.numa.co";
  
     function died($error) {
@@ -42,10 +42,9 @@ if(isset($_POST['email'])) {
       return str_replace($bad,"",$string);
     }
  
-     $first_name = clean_string($first_name);
-     $last_name = clean_string($last_name);
+ 
      $email_from = clean_string($email_from);
-     $comments = clean_string($comments);
+
  
     $email_message .= "<strong>Email:</strong> ".$email_from."<br>";
  
