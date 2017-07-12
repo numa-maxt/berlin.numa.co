@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "daniel@digitalime.com";
+    $email_to = "berlin+contact@numa.co";
     $email_subject = "Website Contact from berlin.numa.co";
  
     function died($error) {
@@ -78,7 +78,7 @@ $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 $headers .= "Reply-To: ". $email_from . "\r\n";
-//$headers .= "CC: test@example.com\r\n"; //If you want to cc someone - go ahead
+$headers .= "CC: darius.m@numa.co\r\n"; //If you want to cc someone - go ahead
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 @mail($email_to, $email_subject, $email_message, $headers);  
