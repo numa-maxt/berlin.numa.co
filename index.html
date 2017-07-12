@@ -19,6 +19,7 @@
 	<!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/numa.css">
 
     <!-- todo: seo -->
@@ -41,29 +42,21 @@
 
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
-    				<li>
-    					<a href="../components-documentation.html" target="_blank">
-    						Components
-    					</a>
-    				</li>
-    				<li>
-						<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
-							<i class="material-icons">unarchive</i> Upgrade to PRO
-						</a>
-    				</li>
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#Learn">Learn</a></li>
+				<li><a href="#Innovate">Innovate</a></li>
+				<li><a href="#DataCity">DataCity</a></li>
+				<li><a href="#Community">Community</a></li>
+				<li><a href="#About">About</a></li>
+				<li><a href="#Contact">Contact</a></li>
 		            <li>
-		                <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+		                <a href="https://www.facebook.com/NUMABerlin/?fref=ts" target="_blank" class="btn btn-simple btn-white btn-just-icon">
 							<i class="fa fa-twitter"></i>
 						</a>
 		            </li>
 		            <li>
-		                <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+		                <a href="https://twitter.com/NUMA_Berlin" target="_blank" class="btn btn-simple btn-white btn-just-icon">
 							<i class="fa fa-facebook-square"></i>
-						</a>
-		            </li>
-					<li>
-		                <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple btn-white btn-just-icon">
-							<i class="fa fa-instagram"></i>
 						</a>
 		            </li>
         		</ul>
@@ -75,7 +68,7 @@
         <div class="header header-filter" style="background-image: linear-gradient(180deg, rgba(0, 88,125,0.8), rgba(9, 88,125,1)), url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
             <div class="container">
                 <div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 wow fadeInUp">
 						<h1 class="title">Tech for Tomorrow</h1>
 						<h4>NUMA Berlin is an innovation-hub accelerating startups and supporting corporates and public institutions on their innovation journey.</h4>
 	                    <br />
@@ -93,7 +86,7 @@
 								<div class="col-sm-7">
 									<div class="input-group w100">
 										<div class="form-group is-empty">
-										<input type="email" value="" name="email" placeholder="Your Email..." class="form-control"><span class="material-input"></span></div>
+										<input type="email" value="" required name="email" placeholder="Your Email..." class="form-control"><span class="material-input"></span></div>
 									</div>
 								</div>
 								<div class="col-sm-5">
@@ -105,8 +98,13 @@
                 	</div>
                 </div>
 				<!-- //news -->
-
             </div>
+<svg id="logoBig" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.53 326.54">
+	<style>.cls-1{fill:#05b3c6; stroke:2px;}</style>
+	<rect class="cls-1" x="66.26" y="33.93" width="86.24" height="258.68"/>
+	<polygon class="cls-1" points="260.27 33.93 174.06 77.05 174.06 292.61 260.27 292.61 260.27 33.93"/>
+</svg>
+
         </div>
 
 		<div class="main main-raised">
@@ -240,26 +238,26 @@
                                 <div class="col-md-6">
 									<div class="form-group label-floating is-empty">
 										<label class="control-label">First Name</label>
-										<input type="text" class="form-control" name="first_name">
+										<input required type="text" class="form-control" name="first_name">
 									<span class="material-input"></span></div>
                                 </div>
                                      <div class="col-md-6">
 									<div class="form-group label-floating is-empty">
 										<label class="control-label">Last Name</label>
-										<input type="text" class="form-control" name="last_name">
+										<input required type="text" class="form-control" name="last_name">
 									<span class="material-input"></span></div>
                                 </div>
                                 <div class="col-md-12">
 									<div class="form-group label-floating is-empty">
 										<label class="control-label">Your Email</label>
-										<input type="email" class="form-control" name="email">
+										<input type="email" required class="form-control" name="email">
 									<span class="material-input"></span></div>
                                 </div>
                             </div>
 
 							<div class="form-group label-floating is-empty">
 								<label class="control-label">Your Messge</label>
-								<textarea class="form-control" rows="4" name="comments"> </textarea>
+								<textarea  required class="form-control" rows="4" name="comments"> </textarea>
 							<span class="material-input"></span></div>
 
                             <div class="row">
@@ -306,20 +304,30 @@
 	                </ul>
 	            </nav>
 	            <div class="copyright pull-right">
-	                &copy; 2016, made with <i class="fa fa-heart heart"></i> by Creative Tim
+	                &copy; 2017, made with <i class="fa fa-heart heart"></i> by Digitalime <!-- based on Creative Tim awesome template -->
 	            </div>
 	        </div>
 	    </footer>
 
 	</div>
 </body>
-<!-- footer.inc.php -->
 
 	<!--   Core JS Files   -->
 	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="assets/js/material.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+<script>
+	$(document).ready(function() {
 
+    $('form').each(function() {
+        $(this).validate({    
+        });
+    });
+
+});
+</script>
 	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
 
