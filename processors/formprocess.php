@@ -82,6 +82,7 @@ $headers .= "CC: darius.m@numa.co\r\n"; //If you want to cc someone - go ahead
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 @mail($email_to, $email_subject, $email_message, $headers);  
+header('location: http://berlin.numa.co/thanks.html');
 ?>
  
 <!-- include your own success html here -->
