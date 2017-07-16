@@ -3732,7 +3732,7 @@ h2.title {
 
 .profile-page .header {
   height: 380px;
-  background-position: top center;
+  background-position: bottom center;
 }
 .profile-page .profile {
   text-align: center;
